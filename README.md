@@ -1,22 +1,23 @@
-# Semi-Trax Professional Website v2
+# Semi-Trax Premium Website
 
-This version restores the animated driver network markers on the North America map.
+Professional dark-theme landing page inspired by the approved concept.
 
-Upload the contents of this folder to:
-`semitrack00-sys/Semitrax-web`
+Included:
+- index.html
+- style.css
+- script.js
+- render.yaml
+- privacy.html
+- terms.html
+- assets/north-america-map.png
 
-Keep/add these existing image assets in the same repository root:
-- semi-trax-logo.png
-- moving-truck.png
-- north-america-map.png
+Highlights:
+- 60 animated illustrative driver/activity markers on the North America map
+- Responsive truck-navigation dashboard mockup
+- Animated moving-truck highway section
+- U.S. + Canada + Mexico coverage
+- Feature, platform, vehicle-profile, and fleet sections
+- 500K long-term target
+- Render static-site configuration
 
-Main improvements:
-- Professional landing-page layout
-- Moving truck highway animation
-- 28 animated driver/activity markers across U.S., Canada, and Mexico
-- Responsive mobile/tablet design
-- 500K long-term target presentation
-
-Render:
-- Branch: main
-- Publish directory: .
+Deploy the contents of this folder to `semitrack00-sys/Semitrax-web` on branch `main`.
