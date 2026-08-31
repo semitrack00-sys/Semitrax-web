@@ -1,23 +1,16 @@
-# Semi-Trax Premium Website
+# Semi-Trax Premium Website — Fixed Map Build
 
-Professional dark-theme landing page inspired by the approved concept.
+This build fixes the North America coverage map.
 
-Included:
-- index.html
-- style.css
-- script.js
-- render.yaml
-- privacy.html
-- terms.html
-- assets/north-america-map.png
+Important:
+- `north-america-map.png` is included in the website root.
+- A duplicate is also included under `assets/` for compatibility.
+- `index.html` explicitly loads `north-america-map.png?v=3` to help bypass stale CDN/browser cache.
+- Keep the animated driver/activity network enabled.
 
-Highlights:
-- 60 animated illustrative driver/activity markers on the North America map
-- Responsive truck-navigation dashboard mockup
-- Animated moving-truck highway section
-- U.S. + Canada + Mexico coverage
-- Feature, platform, vehicle-profile, and fleet sections
-- 500K long-term target
-- Render static-site configuration
+Upload ALL files in this folder to `semitrack00-sys/Semitrax-web`.
+Do not upload only index.html.
 
-Deploy the contents of this folder to `semitrack00-sys/Semitrax-web` on branch `main`.
+Render settings:
+- Branch: main
+- Publish directory: .
