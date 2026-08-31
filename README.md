@@ -1,12 +1,14 @@
-# Semi-Trax Website
+# Semi-Trax Professional Website
 
-Static website ready for GitHub Pages or any standard web host.
+Upload the contents of this folder to the `semitrack00-sys/Semitrax-web` repository.
 
-## Publish with GitHub Pages
+Required image assets:
+- semi-trax-logo.png
+- moving-truck.png
+- north-america-map.png
 
-1. Upload every file and the `assets` folder to the root of your repository.
-2. Open **Settings → Pages** in GitHub.
-3. Under **Build and deployment**, select **Deploy from a branch**.
-4. Select your main branch and the root folder, then save.
+The ZIP includes placeholder files for those assets only if the originals could not be copied here. Keep the existing image files from your GitHub repository when replacing the HTML/CSS.
 
-Mexico coverage is included throughout the site. Replace the contact email in the HTML files if needed.
+Render:
+- Branch: main
+- Publish directory: .
