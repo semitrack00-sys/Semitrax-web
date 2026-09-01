@@ -14,3 +14,5 @@ Fixes included:
 Deploy as a static site. `render.yaml` is included for Render.
 
 Note: the North America base-map image is loaded from the existing Semi-Trax production asset URL so the package uses the current official map artwork.
+
+- Branding updated to use the exact user-provided official Semi-Trax orange truck + X PNG logo.
