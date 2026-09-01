@@ -1,14 +1,16 @@
-# Semi-Trax Premium Website — Precise Map Build
+# Semi-Trax Website — Fixed Package
 
-This build fixes the animated driver markers so every marker is anchored to the exact North America map image.
+Static website package for Semi-Trax.
 
-- 60 animated activity markers total
-- 38 sampled on U.S. land pixels
-- 14 sampled on Canadian land pixels
-- 8 sampled on Mexican land pixels
-- The driver overlay uses the exact 1280×1132 image coordinate system
-- The map and overlay scale together on desktop, tablet, and mobile
-- `north-america-map.png` is included in the website root and under `assets/`
-- Map URL uses `?v=4` to help bypass stale browser/CDN cache
+Fixes included:
+- Visible Semi-Trax logo/icon in header and footer.
+- Responsive North America map overlay using one shared coordinate system.
+- Driver markers stay anchored to the map while resizing.
+- Cleaner navigation demo controls and spacing.
+- Coverage wording updated to 13 Canadian provinces & territories.
+- 500K long-term driver target retained.
+- Privacy Policy and Terms links retained.
 
-Upload ALL contents of the `Semitrax-web` folder to the website repository.
+Deploy as a static site. `render.yaml` is included for Render.
+
+Note: the North America base-map image is loaded from the existing Semi-Trax production asset URL so the package uses the current official map artwork.

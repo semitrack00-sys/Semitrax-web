@@ -1,156 +1,86 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Semi-Trax professional truck navigation for drivers, owner-operators, and fleets across the U.S., Canada, and Mexico." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Semi-Trax professional truck navigation for drivers, owner-operators, and fleets across the U.S., Canada, and Mexico.">
   <title>Semi-Trax | Professional Truck Navigation</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <a href="#top" class="brand" aria-label="Semi-Trax home">
-      <span class="brand-main">SEMI-TRA<span>X</span></span>
-      <small>SMARTER ROUTES. SAFER DELIVERIES.</small>
-    </a>
-    <nav aria-label="Primary navigation">
-      <a href="#features">Features</a>
-      <a href="#platform">Platform</a>
-      <a href="#fleets">For Fleets</a>
-      <a href="#coverage">Coverage</a>
-    </nav>
-    <a class="btn btn-small" href="mailto:contact@semitrax.com?subject=Semi-Trax%20Pilot%20Program">Join the pilot →</a>
-  </header>
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="Semi-Trax home">
+    <img src="semi-trax-logo.svg" alt="Semi-Trax" class="brand-logo">
+    <span class="brand-copy"><b>SEMI-TRA<span>X</span></b><small>SMARTER ROUTES. SAFER DELIVERIES.</small></span>
+  </a>
+  <nav><a href="#features">Features</a><a href="#platform">Platform</a><a href="#fleets">For Fleets</a><a href="#coverage">Coverage</a></nav>
+  <a class="btn small" href="mailto:contact@semitrax.com?subject=Semi-Trax%20Pilot%20Program">Join the pilot →</a>
+</header>
 
-  <main id="top">
-    <section class="hero section-shell">
-      <div class="hero-copy">
-        <p class="eyebrow">● BUILT FOR COMMERCIAL TRUCKING</p>
-        <h1>The road ahead,<br><span>built for your truck.</span></h1>
-        <p class="lead">Professional truck navigation that helps drivers plan safer, compliant, and more efficient routes across the United States, Canada, and Mexico.</p>
-        <div class="hero-actions">
-          <a class="btn" href="mailto:contact@semitrax.com?subject=Semi-Trax%20Pilot%20Program">Join the pilot →</a>
-          <a class="btn btn-ghost" href="#platform">Explore the platform</a>
-        </div>
-        <div class="trust-row">
-          <span>◉ Driver-centered</span><span>◆ Fleet-ready</span><span>◎ U.S. + Canada + Mexico</span>
-        </div>
-      </div>
+<main id="top">
+<section class="hero shell">
+  <div>
+    <p class="eyebrow">● BUILT FOR COMMERCIAL TRUCKING</p>
+    <h1>The road ahead,<br><span>built for your truck.</span></h1>
+    <p class="lead">Professional truck navigation that helps drivers plan safer, compliant, and more efficient routes across the United States, Canada, and Mexico.</p>
+    <div class="actions"><a class="btn" href="mailto:contact@semitrax.com?subject=Semi-Trax%20Pilot%20Program">Join the pilot →</a><a class="btn ghost" href="#platform">Explore the platform</a></div>
+    <div class="trust"><span>◉ Driver-centered</span><span>◆ Fleet-ready</span><span>◎ U.S. + Canada + Mexico</span></div>
+  </div>
 
-      <div class="nav-device" aria-label="Illustrative Semi-Trax navigation screen">
-        <div class="device-head"><strong>SEMI-TRA<span>X</span></strong><span>☰</span></div>
-        <div class="device-map">
-          <div class="turn-card"><b>↑</b><div><strong>In 1.2 miles</strong><small>Keep right on I-80 E</small></div></div>
-          <div class="speed-box"><small>SPEED</small><b>65</b><span>MPH</span></div>
-          <div class="map-route"></div>
-          <div class="vehicle-arrow">▲</div>
-          <div class="map-control">◖</div>
-          <div class="map-control warning">!</div>
-          <div class="map-control zoom">+</div>
-        </div>
-        <div class="device-stats">
-          <div><b>7.4 mi</b><span>US-95 N</span></div>
-          <div><span>ARRIVAL</span><b>4:18 PM</b></div>
-          <div><span>REMAINING</span><b>184 mi</b></div>
-          <div><span>DRIVE TIME</span><b>3h 12m</b></div>
-        </div>
-        <div class="verified">✓ TRUCK ROUTE VERIFIED</div>
-      </div>
+  <div class="nav-device">
+    <div class="device-head"><strong>SEMI-TRA<span>X</span></strong><b>☰</b></div>
+    <div class="device-map">
+      <div class="turn"><span class="turn-icon">↱</span><div><b>In 1.2 miles</b><small>Keep right on I-80 E</small></div></div>
+      <div class="speed"><small>SPEED</small><b>65</b><small>MPH</small></div>
+      <div class="route"></div><div class="arrow">➤</div>
+      <button class="control c1">⌖</button><button class="control c2">⚠</button><button class="control c3">＋</button>
+    </div>
+    <div class="device-stats"><div><b>7.4 mi</b><small>US-95 N</small></div><div><small>ARRIVAL</small><b>4:18 PM</b></div><div><small>REMAINING</small><b>184 mi</b></div><div><small>DRIVE TIME</small><b>3h 12m</b></div></div>
+    <div class="verified">✓ TRUCK ROUTE VERIFIED</div>
+  </div>
+</section>
 
-      <div class="coverage-panel" id="coverage">
-        <div class="coverage-map-wrap">
-          <div class="map-stage">
-            <img src="north-america-map.png?v=4" alt="North America map showing Semi-Trax illustrative driver activity" />
-            <div class="driver-layer" id="driverLayer" aria-hidden="true"></div>
-          </div>
-        </div>
-        <div class="coverage-copy">
-          <p class="eyebrow">NORTH AMERICA COVERAGE</p>
-          <h2>Built for the roads drivers use today.</h2>
-          <p>Semi-Trax focuses on vehicle-aware truck navigation across the United States, Canada, and Mexico.</p>
-          <div class="coverage-stats">
-            <div><b>50</b><span>U.S. states</span></div>
-            <div><b>10 + 3</b><span>Canadian provinces & territories</span></div>
-            <div><b>32</b><span>Mexican federal entities</span></div>
-            <div><b>3</b><span>Countries covered</span></div>
-          </div>
-          <div class="legend"><span><i class="dot active"></i> Active drivers</span><span><i class="dot route"></i> Route activity</span></div>
-        </div>
-      </div>
-    </section>
+<section class="coverage shell" id="coverage">
+  <div class="map-wrap">
+    <div class="map-stage">
+      <img src="https://www.semitrax.com/north-america-map.png?v=4" alt="North America map showing Semi-Trax illustrative driver activity">
+      <div id="driverLayer" class="driver-layer" aria-hidden="true"></div>
+    </div>
+  </div>
+  <div>
+    <p class="eyebrow">NORTH AMERICA COVERAGE</p>
+    <h2>Built for the roads drivers use today.</h2>
+    <p class="muted">Semi-Trax focuses on vehicle-aware truck navigation across the United States, Canada, and Mexico.</p>
+    <div class="stats"><div><b>50</b><span>U.S. states</span></div><div><b>13</b><span>Canadian provinces & territories</span></div><div><b>32</b><span>Mexican federal entities</span></div><div><b>3</b><span>Countries covered</span></div></div>
+    <div class="legend"><span><i class="active"></i>Active drivers</span><span><i class="route-dot"></i>Route activity</span></div>
+  </div>
+</section>
 
-    <section class="truck-band">
-      <div class="truck-band-copy">
-        <p class="eyebrow">BUILT FOR THE LONG HAUL</p>
-        <h2>Navigation that moves with the road.</h2>
-        <div class="poi-row">
-          <span>⛽<small>Fuel</small></span><span>Ⓟ<small>Parking</small></span><span>⚖<small>Weigh Stations</small></span><span>▣<small>Truck Stops</small></span><span>☕<small>Rest Areas</small></span><span>🔧<small>Repairs</small></span><span>◉<small>Traffic</small></span><span>☁<small>Weather</small></span>
-        </div>
-      </div>
-      <div class="mountains"></div>
-      <div class="highway">
-        <div class="lane-mark lane-a"></div><div class="lane-mark lane-b"></div>
-        <div class="truck" aria-hidden="true">
-          <div class="trailer"></div><div class="cab"></div><div class="window"></div><div class="grille"></div>
-          <div class="wheel w1"></div><div class="wheel w2"></div><div class="wheel w3"></div>
-        </div>
-      </div>
-    </section>
+<section class="band">
+ <div class="shell band-inner"><div><p class="eyebrow">BUILT FOR THE LONG HAUL</p><h2>Navigation that moves with the road.</h2></div>
+ <div class="poi"><span>⛽<small>Fuel</small></span><span>Ⓟ<small>Parking</small></span><span>⚖<small>Weigh Stations</small></span><span>▣<small>Truck Stops</small></span><span>☕<small>Rest Areas</small></span><span>🔧<small>Repairs</small></span><span>◉<small>Traffic</small></span><span>☁<small>Weather</small></span></div></div>
+</section>
 
-    <section class="features section-shell" id="features">
-      <div class="section-heading compact-heading">
-        <div><p class="eyebrow">NAVIGATION, RE-ENGINEERED</p><h2>Built around the realities of commercial driving.</h2></div>
-        <p>Semi-Trax starts with the truck, then builds the route. Every guidance decision is shaped around professional drivers and the vehicles they operate.</p>
-      </div>
-      <div class="feature-grid">
-        <article><span class="feature-num">01</span><i>▣</i><h3>Truck-aware routing</h3><p>Routes calculated around height, weight, length, width, axles, trailer, and hazmat profile.</p></article>
-        <article><span class="feature-num green">02</span><i>➤</i><h3>Confident guidance</h3><p>Clear turn-by-turn directions, lane guidance, route previews, voice prompts, and automatic rerouting.</p></article>
-        <article><span class="feature-num orange">03</span><i>⚠</i><h3>Live road intelligence</h3><p>Traffic-aware ETAs, incidents, closures, and relevant warnings when licensed data is available.</p></article>
-        <article><span class="feature-num violet">04</span><i>☁</i><h3>Offline-ready maps</h3><p>Keep navigating through low-signal areas with downloadable U.S., Canada, and Mexico map coverage.</p></article>
-      </div>
-    </section>
+<section class="shell" id="features">
+ <p class="eyebrow">NAVIGATION, RE-ENGINEERED</p><h2>Built around the realities of commercial driving.</h2>
+ <p class="muted max">Semi-Trax starts with the truck, then builds the route. Every guidance decision is shaped around professional drivers and the vehicles they operate.</p>
+ <div class="cards">
+  <article><em>01</em><i>▣</i><h3>Truck-aware routing</h3><p>Routes calculated around height, weight, length, width, axles, trailer, and hazmat profile.</p></article>
+  <article><em>02</em><i>➤</i><h3>Confident guidance</h3><p>Clear turn-by-turn directions, lane guidance, route previews, voice prompts, and automatic rerouting.</p></article>
+  <article><em>03</em><i>⚠</i><h3>Live road intelligence</h3><p>Traffic-aware ETAs, incidents, closures, and relevant warnings when licensed data is available.</p></article>
+  <article><em>04</em><i>☁</i><h3>Offline-ready maps</h3><p>Keep navigating through low-signal areas with downloadable U.S., Canada, and Mexico map coverage.</p></article>
+ </div>
+</section>
 
-    <section class="platform section-shell" id="platform">
-      <div class="journey-card">
-        <p class="eyebrow">THE COMPLETE JOURNEY</p>
-        <h2>More than a route.<br>A smarter day on the road.</h2>
-        <div class="journey-list">
-          <div><b>1</b><p><strong>Plan with precision</strong><span>Multi-stop trips shaped by your truck profile.</span></p></div>
-          <div><b>2</b><p><strong>See what matters</strong><span>Truck stops, parking, weigh stations, fuel, repair, and rest areas.</span></p></div>
-          <div><b>3</b><p><strong>Respond in real time</strong><span>Traffic-aware arrival times and automatic rerouting.</span></p></div>
-        </div>
-      </div>
+<section class="shell three" id="platform">
+ <article><p class="eyebrow">THE COMPLETE JOURNEY</p><h2>More than a route.<br>A smarter day on the road.</h2><ol><li><b>Plan with precision</b><span>Multi-stop trips shaped by your truck profile.</span></li><li><b>See what matters</b><span>Truck stops, parking, weigh stations, fuel, repair, and rest areas.</span></li><li><b>Respond in real time</b><span>Traffic-aware arrival times and automatic rerouting.</span></li></ol></article>
+ <article><p class="eyebrow">MAXIMUM VEHICLE PROFILE</p><h2>Multi-Trailer Combination</h2><div class="spec"><span>CONFIGURATION<b>Single / Double / Triple</b></span><span>HEIGHT<b>Up to 13′ 6″</b></span><span>WEIGHT<b>Up to 80,000 lb*</b></span><span>AXLES<b>Up to 9</b></span></div><p>✓ Multi-trailer restriction routing<br>✓ Bridge clearance and weight checks<br>✓ State and approved-network rules</p></article>
+ <article id="fleets"><p class="eyebrow">FOR OWNER-OPERATORS AND FLEETS</p><h2>Start with one driver.<br>Scale with your operation.</h2><div class="fleet"><span>PILOT<b>25–100</b>Drivers</span><span>YEAR ONE<b>1K–5K</b>Drivers</span><span class="target">LONG-TERM TARGET<b>500K</b>Drivers</span></div></article>
+</section>
 
-      <div class="profile-card">
-        <p class="eyebrow">MAXIMUM VEHICLE PROFILE</p>
-        <h2>Multi-Trailer Combination</h2>
-        <div class="mini-truck"><div class="mini-cab"></div><div class="mini-trailer"></div></div>
-        <div class="profile-specs"><div><small>CONFIGURATION</small><b>Single / Double / Triple</b></div><div><small>HEIGHT</small><b>Up to 13′ 6″</b></div><div><small>WEIGHT</small><b>Up to 80,000 lb*</b></div><div><small>AXLES</small><b>Up to 9</b></div></div>
-        <ul><li>✓ Multi-trailer restriction routing</li><li>✓ Bridge clearance and weight checks</li><li>✓ State and approved-network rules</li></ul>
-        <div class="profile-ready"><span>Maximum profile<br>ready for routing</span><b>100%</b></div>
-      </div>
+<section class="cta"><div><p class="eyebrow">THE NEXT MILE STARTS HERE</p><h2>Professional navigation. Purpose-built for trucking.</h2><p>Semi-Trax is currently in development and commercial-provider evaluation.</p></div><a class="btn" href="mailto:contact@semitrax.com?subject=Semi-Trax%20Inquiry">Talk with Semi-Trax →</a></section>
+</main>
 
-      <div class="fleet-card" id="fleets">
-        <p class="eyebrow">FOR OWNER-OPERATORS AND FLEETS</p>
-        <h2>Start with one driver.<br>Scale with your operation.</h2>
-        <div class="fleet-stats"><div><small>PILOT</small><b>25–100</b><span>Drivers</span></div><div><small>YEAR ONE</small><b>1K–5K</b><span>Drivers</span></div><div class="fleet-target"><small>LONG-TERM TARGET</small><b>500K</b><span>Drivers</span></div></div>
-        <div class="fleet-benefits"><span>◉ Easy to start</span><span>▰ Built to scale</span><span>◫ Data you can use</span><span>◆ Support you can count on</span></div>
-      </div>
-    </section>
-
-    <section class="cta">
-      <div><p class="eyebrow">THE NEXT MILE STARTS HERE</p><h2>Professional navigation. Purpose-built for trucking.</h2><p>Semi-Trax is currently in development and commercial-provider evaluation.</p></div>
-      <a class="btn" href="mailto:contact@semitrax.com?subject=Semi-Trax%20Inquiry">Talk with Semi-Trax →</a>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <a class="brand" href="#top"><span class="brand-main">SEMI-TRA<span>X</span></span><small>SMARTER ROUTES. SAFER DELIVERIES.</small></a>
-    <p>Commercial truck navigation and driver assistance.</p>
-    <nav><a href="#features">Features</a><a href="#platform">Platform</a><a href="#fleets">For Fleets</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
-    <span>© 2026 Semi-Trax</span>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<footer><a class="brand" href="#top"><img src="semi-trax-logo.svg" alt="" class="brand-logo"><span class="brand-copy"><b>SEMI-TRA<span>X</span></b><small>SMARTER ROUTES. SAFER DELIVERIES.</small></span></a><span>Commercial truck navigation and driver assistance.</span><nav><a href="#features">Features</a><a href="#platform">Platform</a><a href="#fleets">For Fleets</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav><span>© 2026 Semi-Trax</span></footer>
+<script src="script.js"></script>
+</body></html>
