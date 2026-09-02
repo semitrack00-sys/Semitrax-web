@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: ticash-app-web
+    name: semitrax-website
     runtime: static
-    buildCommand: echo "Static TiCash site"
     staticPublishPath: .
+    pullRequestPreviewsEnabled: true
