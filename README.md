@@ -1,18 +1,24 @@
-# Semi-Trax Website — Fixed Package
+# TiCash Website
 
-Static website package for Semi-Trax.
+GitHub/Render-ready TiCash static website with the logo fix included.
 
-Fixes included:
-- Visible Semi-Trax logo/icon in header and footer.
-- Responsive North America map overlay using one shared coordinate system.
-- Driver markers stay anchored to the map while resizing.
-- Cleaner navigation demo controls and spacing.
-- Coverage wording updated to 13 Canadian provinces & territories.
-- 500K long-term driver target retained.
-- Privacy Policy and Terms links retained.
+## Deploy
+Upload ALL files and folders from this ZIP to the ROOT of the `ticash-app-web` repository.
 
-Deploy as a static site. `render.yaml` is included for Render.
+Required root files include:
+- index.html
+- style.css
+- privacy.html
+- terms.html
+- render.yaml
+- ticash-logo.png
+- assets/
 
-Note: the North America base-map image is loaded from the existing Semi-Trax production asset URL so the package uses the current official map artwork.
+Render:
+- Type: Static Site
+- Branch: main
+- Root Directory: blank
+- Build Command: blank
+- Publish Directory: ./
 
-- Branding updated to use the exact user-provided official Semi-Trax orange truck + X PNG logo.
+The website uses `/ticash-logo.png?v=4` so the logo is served directly from the repository root.
