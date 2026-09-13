@@ -1,0 +1,6 @@
+{
+  "name": "semitrax-website",
+  "private": true,
+  "scripts": { "test": "node --test tests/reset-password.test.cjs" },
+  "devDependencies": { "playwright": "1.62.1" }
+}
