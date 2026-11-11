@@ -43,6 +43,7 @@ export class DriverApi {
     const refreshToken = this.session?.refreshToken; this.clear();
     if (refreshToken) await this.request('/auth/logout', 'POST', { refreshToken }, null);
   }
+  requestPasswordReset(email) { return this.request('/auth/password-reset/request', 'POST', { email: email.trim() }, null); }
   profile() { return this.request('/me'); }
   trucks() { return this.request('/trucks'); }
   saveProfile(fullName, phone) { return this.request('/me', 'PATCH', { fullName: fullName.trim(), phone: phone.trim() || null }); }

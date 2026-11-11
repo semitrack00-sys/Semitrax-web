@@ -39,6 +39,13 @@ $('login').addEventListener('submit', event => {
     message('Signed in. Account details loaded.'); await loadTrucks();
   });
 });
+$('recovery').addEventListener('submit', event => {
+  event.preventDefault(); const form = event.currentTarget;
+  void action(form, async () => {
+    await api.requestPasswordReset(form.elements.email.value);
+    message('If an account exists for that email, reset instructions will be sent. Check your inbox and spam folder.');
+  });
+});
 $('profile').addEventListener('submit', event => {
   event.preventDefault(); const form = event.currentTarget;
   void action(form, async () => { showProfile(await api.saveProfile(form.elements.fullName.value, form.elements.phone.value)); message('Profile saved to your SemiTraX account.'); });

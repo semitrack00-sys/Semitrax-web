@@ -37,3 +37,15 @@ test('service worker excludes API, authenticated and unrelated requests',()=>{
 test('empty credentials in successful login response are rejected',async()=>{
  const {DriverApi}=await load();const client=new DriverApi(async()=>Response.json({...session,accessToken:''}));await assert.rejects(client.login('driver@example.test','synthetic'),/Invalid sign-in/);assert.equal(client.session,null);
 });
+
+test('password recovery trims email and never sends session credentials',async()=>{
+ const {DriverApi}=await load();let captured;const client=new DriverApi(async(url,options)=>{captured={url,options};return Response.json({ok:true});});
+ client.session=session;await client.requestPasswordReset(' driver@example.test ');
+ assert.equal(captured.url,'https://semitrax-api.onrender.com/auth/password-reset/request');
+ assert.equal(captured.options.headers.Authorization,undefined);
+ assert.deepEqual(JSON.parse(captured.options.body),{email:'driver@example.test'});
+});
+test('rate limited password recovery is not automatically retried',async()=>{
+ const {DriverApi}=await load();let calls=0;const client=new DriverApi(async()=>{calls++;return new Response('',{status:429});});
+ await assert.rejects(client.requestPasswordReset('driver@example.test'),/Too many requests/);assert.equal(calls,1);
+});

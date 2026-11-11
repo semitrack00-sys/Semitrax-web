@@ -13,3 +13,9 @@ Tests: seven Node regression tests passed; JavaScript syntax and git whitespace 
 Unverified: browser layout, CSP delivery, PWA installation, airplane-mode shell behavior, live API CORS/authentication and existing password-reset browser suite. No physical Android verification. Browser map rendering, destination search and truck-safe planning are not implemented. Provider licenses/configuration need verification before those features can be enabled. Native CoPilot guidance remains Android-only, clearly stated in the interface.
 
 Branch: codex/step-21-driver-account-web in semitrack00-sys/Semitrax-web. Previous unpublished work was restored after the temporary workspace reset; previous GitHub creation was blocked by a workspace-credit review failure. No production deployment, billing change or APK build. Step 22 remains blocked by device/provider acceptance, remaining web features and unresolved security findings.
+
+## Browser validation and recovery follow-up
+
+The desktop sign-in layout was inspected in the cloud browser. The new Forgot password disclosure expands to an accessible email field and Send reset email button. Recovery uses POST /auth/password-reset/request with no Authorization header and a neutral success message. No email was sent and no actual login/profile change was attempted. Nine Node tests now pass, including recovery request serialization and rate-limit behavior. Updated the shell cache version for the changed interface.
+
+Additional files changed: driver/index.html, driver/style.css, driver/app.mjs, driver/api.mjs, driver/sw.js, tests/driver-api.test.cjs and this report. Mobile viewport, real recovery delivery, authenticated browser flows, PWA installation and offline runtime verification remain pending. Desktop rendering alone does not establish those behaviors.

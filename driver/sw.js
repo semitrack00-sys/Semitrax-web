@@ -1,4 +1,4 @@
-const CACHE = 'semitrax-driver-shell-v1';
+const CACHE = 'semitrax-driver-shell-v2';
 const ASSETS = ['./', './index.html', './style.css', './app.mjs', './api.mjs', './manifest.webmanifest'];
 const urls = ASSETS.map(path => new URL(path, self.registration.scope).href);
 self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(urls))));
